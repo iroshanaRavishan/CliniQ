@@ -1,0 +1,125 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+}
+
+.page {
+    color: black;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+form {
+    padding: 25px 25px 15px 25px;
+
+}
+
+.input-row {
+    width: 100%;
+
+}
+
+.input-row input {
+    width: 100%;
+    border-radius: 15px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    border: none;
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+}
+
+.input-row label {
+    color: black;
+    font-size: 14px;
+}
+
+.input-row input:focus {
+    outline: none;
+}
+
+.login {
+    background-color: #1c8ae4 !important;
+}
+
+.auth-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.forget-password {
+    color: #1c8ae4;
+    font-weight: bold;
+    float: right;
+    font-size: 14px;
+}
+
+.reg-navigator-contaner {
+    display: flex;
+    padding: 25px;
+}
+
+.reg-navigator {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    b {
+        color: #1c8ae4;
+    }
+}
+
+.toggle-password-eye {
+    height: 20px;
+    position: absolute;
+    right: 45px;
+    margin-top: 15px;
+}
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 30px;
+    height: 28px;
+    border: 1px solid #1c8ae4; 
+    background-color: white; 
+    border-radius: 5px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+  
+input[type="checkbox"]:checked {
+    background-color: #1c8ae4; 
+    border-color: #1c8ae4; 
+    position: relative;
+}
+  
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.confirm-text {
+    color: rgb(94, 94, 94);
+    font-size: 14px;
+}
+
+.confirm-reg-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

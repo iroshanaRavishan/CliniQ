@@ -1,0 +1,142 @@
+.patient-list-header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        h4{
+            margin: 0;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    }
+
+    .right-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: baseline;
+        img{
+            height: 40px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.left-items {
+    p {
+        color: #1c8ae4;
+        background-color: #F0F7FF;
+        padding: 8px 15px;
+        margin-left: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}
+
+
+.search-bar {
+    appearance: none;
+    background-color: #F0F7FF;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #1c8ae4;
+    width: 100%;
+
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+.search-wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    img {
+        position: absolute;
+        height: 20px;
+        right: 40px;
+        margin-top: 14px;
+    }
+}
+
+.patient-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    margin-top: 30px;
+
+    .patient {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin: 15px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #f6f6f6;
+        .patient-details {
+            margin-left: 20px;
+            .name{
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0 0 8px 0;
+
+            }
+
+            .patient-bio-details {
+                font-size: 13px;
+            }
+        }
+
+        .patient-list-left-items{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .patient-mobile-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                margin-right: 5px;
+                height: 18px;
+            }
+
+            .mobile-no {
+                font-size: 13px;
+            }
+        }
+
+        .patient-delete-icon-wrapper {
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .profile-image {
+        height: 70px;
+        width: 70px;
+    }
+}

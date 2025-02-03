@@ -1,0 +1,38 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.auth-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.fill {
+    background-color: #1c8ae4 !important;
+}
+
+.register {
+    border: 2px solid #1c8ae4;
+    background-color: white !important;
+    color: #1c8ae4;
+}
+
+.introductory-text-container {
+    display: flex;
+    text-align: center;
+    height: 500px;
+    padding: 100px 40px 0 40px;
+
+}
+
+.introductory-text {
+    font-size: 14px;
+    color: #252525;
+    line-height: 25px;
+}

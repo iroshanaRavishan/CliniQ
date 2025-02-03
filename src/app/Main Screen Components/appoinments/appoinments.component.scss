@@ -1,0 +1,25 @@
+.appoinment-header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        h4{
+            margin: 0;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    }
+}

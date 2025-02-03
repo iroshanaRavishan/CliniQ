@@ -1,0 +1,62 @@
+
+<ion-content >
+  <ion-app class="inner-background">
+      <div class="main-container"><br>
+        <div class="inner-container">
+          <div class="page">
+            <p>
+              <b>Register</b>
+            </p>
+          </div>
+
+          <form (ngSubmit)="signUp()">
+            <div class="input-wrapper"><br>
+                <div class="input-row">
+                  <label for="">Name</label><br>
+                  <input type="text" placeholder="Ashib Alma" [(ngModel)]="name" name="name" required>
+                </div><br>
+      
+                <div class="input-row">
+                  <label for="">Email</label><br>
+                  <input type="email" [(ngModel)]="email" name="email" placeholder="ashibalma@email.com" required>
+                </div><br>
+
+                <div class="input-row">
+                  <label for="">Contact Number</label><br>
+                  <input type="email" placeholder="(012) 345-6789" required>
+                </div><br>
+
+                <div class="input-row">
+                  <label for="">Medical Registration Number</label><br>
+                  <input type="email" placeholder="AB12345" required>
+                </div><br>
+
+                <div class="input-row">
+                  <label for="">Password</label><br>
+                    <input type="password" placeholder="*********" [(ngModel)]="password" name="password" required>
+                    <img src="../../../assets/icon/hidden-eye.png" class="toggle-password-eye" alt="hide password">
+                </div><br>
+
+                <div class="input-row">
+                  <label for="">Re-Type Password</label><br>
+                    <input type="password" placeholder="*********"  name="confirmPassword" required>
+                    <img src="../../../assets/icon/hidden-eye.png" class="toggle-password-eye" alt="hide password" >
+                </div><br>
+            </div>
+            <div class="confirm-reg-container">
+              <input type="checkbox" name="registerConfirm" #registerConfirm>
+              <span class="confirm-text">By Registering I agree to the Terms of use and Privacy Policy</span>
+            </div>
+            <div class="auth-button-container">
+              <button type="submit" class="button login"(click)="signUp()">Register</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="reg-navigator-contaner">
+          <span class="reg-navigator">You already have an account ? <br>
+            <b (click)="navigateToLogin()">Login</b></span>
+        </div>
+      </div>
+  </ion-app>
+</ion-content>

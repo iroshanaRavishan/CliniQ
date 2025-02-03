@@ -1,0 +1,37 @@
+
+<ion-content >
+  <ion-app class="inner-background">
+      <div class="main-container"><br>
+        <div class="inner-container">
+          <div class="page">
+            <p>
+              <b>Login</b>
+            </p>
+          </div>
+
+          <form method="post">
+            <div class="input-wrapper"><br>
+                <div class="input-row">
+                  <label for="">Email</label><br>
+                  <input type="email" placeholder="sample@email.com" name="email" required [(ngModel)]="email">
+                </div><br>
+      
+                <div class="input-row">
+                  <label for="">Password</label><br>
+                    <input type="password" placeholder="*********" name="password" required [(ngModel)]="password">
+                    <img src="../../../assets/icon/hidden-eye.png" class="toggle-password-eye" alt="hide password">
+                </div><br>
+            </div>
+            <span class="forget-password" (click)="navigateToForgotPassword()">Forget Password?</span>
+          </form>
+        </div>
+        <div class="auth-button-container">
+          <button class="button login" (click)="login()">Login</button>
+        </div>
+        <div class="reg-navigator-contaner">
+          <span class="reg-navigator">Don't you have an account ? <br>
+            <b (click)="navigateToSignUp()">Register Now</b></span>
+        </div>
+      </div>
+  </ion-app>
+</ion-content>

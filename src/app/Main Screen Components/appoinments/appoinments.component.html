@@ -1,0 +1,47 @@
+<ion-content class="main-background">
+  <ion-app class="inner-background">
+      <ion-tabs>
+          <ion-tab tab="appoinments">
+              <ion-content fullscreen class="ion-padding">
+                <div class="main-app-area"> 
+                  <div class="appoinment-header">
+                    <div class="main-text">
+                      <div class="left-items">
+                        <h4>Appoinments</h4>
+                      </div>
+                    </div>
+                  </div> 
+              </div>   
+              </ion-content>
+          </ion-tab>
+                      
+
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button (click)="navigateToHome()" tab="home">
+              <ion-icon name="home-outline"></ion-icon>
+              Home
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToPatients()" tab="patients">
+              <ion-icon name="people-outline"></ion-icon>
+              Patients
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToAppoinment()" tab="appoinments" [ngClass]="{'active-tab': activeTab === 'appoinments'}" (click)="setActiveTab('appoinments')">
+              <ion-icon [name]="activeTab === 'appoinments' ? 'calendar-clear' : 'calendar-clear-outline'"></ion-icon>
+              Appoinments
+            </ion-tab-button>
+
+            <ion-tab-button (click)="navigateToMenu()" tab="menu">
+              <ion-icon name="Menu"></ion-icon>
+              Menu
+            </ion-tab-button>
+          </ion-tab-bar>
+     </ion-tabs>
+  </ion-app>
+</ion-content>
+
+
+
+
+
+
+

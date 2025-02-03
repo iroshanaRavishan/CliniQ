@@ -1,0 +1,102 @@
+<ion-content class="main-background">
+  <ion-app class="inner-background">
+      <ion-tabs>
+          <ion-tab tab="home">
+              <ion-content>
+                  <div class="main-app-area">
+                      <div class="top-profile-detail">
+                          <img src="../../../assets/icon/sample-profile.png" alt="sample profile" class="profile-image">
+                          <span class="profile-text">
+                              <p>Welcome Back !</p>
+                              <h5>Dr. {{userName}}</h5>
+                          </span>
+                          <div class="profile-action-icons">
+                              <img src="../../../assets/icon/alert.png" alt="alert icon">
+                              <img src="../../../assets/icon/search.png" alt="search icon">
+                          </div>
+                      </div>     
+                      <div class="emergency-case">
+                        <div class="main-text">
+                          <div class="left-items">
+                            <h4>Emergency</h4><span>cases</span>
+                          </div>
+                        </div>
+                        <div class="detail-box">
+                          <img src="../../../assets/icon/emergency-case-background.png" alt="background">
+                            <span class="case-number">10</span>
+                            <div class="emergency-detail-area" >
+                              <p>
+                                You have emergency cases requiring your immediate attention
+                              </p>
+                                <button> View All emergency cases</button>
+                            </div>
+                        </div>
+                      </div>     
+                      <div class="todays-appoinment">
+                        <div class="main-text">
+                          <div class="left-items">
+                            <h4>Today's</h4><span>Appoinment</span><p>24</p>
+                          </div>
+                          <div class="right-item">
+                            <span>View more</span>
+                          </div>
+                        </div>
+                        <div class="appoinment-box">
+                          <img src="../../../assets/icon/Appointment1.png" alt="Appoinment">
+                          <img src="../../../assets/icon/Appointment2.png" alt="Appoinment">
+                          <img src="../../../assets/icon/Appointment3.png" alt="Appoinment">
+                        </div>
+                      </div>     
+                      <div class="todays-task">
+                        <div class="main-text">
+                          <div class="left-items">
+                            <h4>Today's</h4><span>Task</span><p>24</p>
+                          </div>
+                          <div class="right-item">
+                            <span>View more</span>
+                          </div>
+                        </div>
+                        <div class="task-box">
+                          <img src="../../../assets/icon/task-1.png" alt="task">
+                          <img src="../../../assets/icon/task-2.png" alt="task">
+
+                        </div>
+                      </div>   
+                      <div class="others-box">
+                        <div class="main-text">
+                          <div class="left-items">
+                            <h4>Others</h4>
+                          </div>
+                        </div>
+                        <div class="charts">
+                          <img src="../../../assets/icon/other-charts-1.png" alt="chart">
+                          <img src="../../../assets/icon/other-charts-1.png" alt="chart">
+
+                        </div>
+                      </div>   
+
+                  </div>     
+              </ion-content>
+          </ion-tab>
+
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button (click)="navigateToHome()" tab="home" [ngClass]="{'active-tab': activeTab === 'home'}" (click)="setActiveTab('home')">
+              <ion-icon [name]="activeTab === 'home' ? 'home' : 'home-outline'"></ion-icon>
+              Home
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToPatients()" tab="patients">
+              <ion-icon name="people-outline"></ion-icon>
+              Patients
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToAppoinment()" tab="appoinments">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              Appoinments
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToMenu()" tab="menu">
+              <ion-icon name="Menu"></ion-icon>
+              Menu
+            </ion-tab-button>
+          </ion-tab-bar>
+     </ion-tabs>
+  </ion-app>
+</ion-content>

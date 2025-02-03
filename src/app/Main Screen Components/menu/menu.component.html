@@ -1,0 +1,68 @@
+<ion-content  class="main-background">
+  <ion-app class="inner-background">
+      <ion-tabs>
+          <ion-tab tab="menu">
+            <ion-content>
+              <div class="main-app-area"> 
+                  <div class="Menu-header">
+                    <div class="main-text">
+                      <div class="left-items">
+                        <h4>Menu</h4>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="menu-body-wrapper">
+                    <div class="menu-body">
+                      <img src="../../../assets/icon/UserCircle.png" alt="profile setting" class="intro-img">
+                      <span>Profile Settings</span>
+                      <img src="../../../assets/icon/right-arrow.png" alt="right arrow" class="right-arrow">
+                    </div>
+                    <div class="menu-body">
+                      <img src="../../../assets/icon/LockOpen.png" alt="profile setting" class="intro-img">
+                      <span>Password Settings</span>
+                      <img src="../../../assets/icon/right-arrow.png" alt="right arrow" class="right-arrow">
+                    </div>
+                    <div class="menu-body">
+                      <img src="../../../assets/icon/Question.png" alt="profile setting" class="intro-img">
+                      <span>FAQs</span>
+                      <img src="../../../assets/icon/right-arrow.png" alt="right arrow" class="right-arrow">
+                    </div>
+                    <div class="menu-body logout-menu" (click)="logout()">
+                      <img src="../../../assets/icon/Logout.png" alt="profile setting" class="intro-img logout">
+                      <span>Logout</span>
+                    </div>
+                  </div>
+
+              </div>     
+            </ion-content>
+          </ion-tab>
+                      
+
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button (click)="navigateToHome()" tab="home">
+              <ion-icon name="home-outline"></ion-icon>
+              Home
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToPatients()" tab="patients">
+              <ion-icon name="people-outline"></ion-icon>
+              Patients
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToAppoinment()" tab="appoinments">
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+              Appoinments
+            </ion-tab-button>
+            <ion-tab-button (click)="navigateToMenu()" tab="menu" [ngClass]="{'active-tab': activeTab === 'menu'}" (click)="setActiveTab('menu')">
+              <ion-icon [name]="activeTab === 'menu' ? 'menu' : 'menu-outline'"></ion-icon>
+              Menu
+            </ion-tab-button>
+          </ion-tab-bar>
+     </ion-tabs>
+  </ion-app>
+</ion-content>
+
+
+
+
+
+
+
